@@ -1,0 +1,103 @@
+@import url("https://use.typekit.net/ojv4ekx.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "europa",sans-serif;
+  box-sizing: border-box;
+  outline:none;
+}
+
+/* Color Codes & Other Variables */
+:root {
+    --primary: #7510F7;
+  --primary-variant: #101EF7;
+  --text: #000;
+  --text-variant: #fff;
+}
+
+/* overall adjustments */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 3% 10%;
+}
+
+/* Navigation Bar */
+nav {
+   background: var(--text-variant);
+   color: var(--primary-variant);
+   z-index: 1;
+}
+
+.navbar {
+    /* padding: 0 0 4.5rem;  */
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--primary-variant);
+}
+
+.nav-link {
+    font-size: 1.5 rem;
+    font-weight: normal;
+    color: var(--primary-variant);
+}
+
+.navbar-toggler-icon {
+    background-color: var(--primary-variant);
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: var(--text);
+}
+
+/* hero section */
+#hero-section {
+    height: 90vh;
+    padding-top: 40px;
+}
+
+#hero-intro {
+    color: var(--text);
+}
+
+#hero-intro h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: ;
+}
+
+#hero-intro span {
+    font-size: 2.5rem;
+    color: var(--primary-variant);
+}
+
+#hero-intro p {
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+/* collaborate section */
+#collaborate {
+    background-color: var(--primary);
+    color: var(--text-variant);
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#collaborate span {
+    color: #10F775;
+}
