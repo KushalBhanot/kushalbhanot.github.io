@@ -65,17 +65,11 @@ nav {
 /* hero section */
 #hero-section {
     height: 90vh;
-    padding-top: 40px;
+    padding-top: 2%;
 }
 
 #hero-intro {
     color: var(--text);
-}
-
-#hero-intro h1 {
-    font-size: 4.5rem;
-    font-weight: bold;
-    line-height: ;
 }
 
 #hero-intro span {
@@ -84,7 +78,7 @@ nav {
 }
 
 #hero-intro p {
-    margin-top: 50px;
+    padding-top: 10%;
     font-size: 1.5rem;
 }
 
@@ -100,4 +94,49 @@ nav {
 
 #collaborate span {
     color: #10F775;
+}
+
+.collab-div {
+    border-top: 20px solid #10F775;
+    border-radius: 5%;
+    margin-top: -15%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-size: 1.2em;
+}
+
+/* hire section */
+#hire {
+    background-color: var(--text-variant);
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.hire-div {
+    font-size: 1.5em;
+    border-bottom: 5px solid var(--text);
+    border-radius: 20%;
+    margin-top: -15%;
+    background-color: var(--text-variant);
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+.btn {
+    background-color:var(--text-variant);
+    border: 2px solid var(--primary-variant);
+    color: var(--text);
+}
+
+.btn:active {
+    background-color:var(--text-variant) !important;
+    border: 2px solid var(--primary-variant);
+    color: var(--text) !important;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #10F775;
+    color: var(--text);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2);
 }
