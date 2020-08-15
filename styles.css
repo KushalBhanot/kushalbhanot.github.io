@@ -185,6 +185,12 @@ nav {
     color: var(--text);
 }
 
+.btn:active, .btn:focus {
+    background-color:var(--text-variant) !important;
+    border: 2px solid var(--primary-variant);
+    color: var(--text) !important;
+}
+
 .btn:hover {
     background-color: #10F775;
     color: var(--text);
