@@ -129,6 +129,12 @@ nav {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    #hero-section {
+        padding-top: 5%;
+    }
+}
+
 /* collaborate section */
 #collaborate {
     background-color: var(--primary);
