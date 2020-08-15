@@ -201,3 +201,10 @@ nav {
     color: var(--text);
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2);
 }
+
+@media only screen and (max-width: 1024px) {
+    #hire {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
