@@ -154,6 +154,12 @@ nav {
     z-index: 1;
 }
 
+@media only screen and (max-width: 880px) {
+    .collab-div {
+        margin-top: -19%;
+    }
+}
+
 /* hire section */
 #hire {
     background-color: var(--primary);
