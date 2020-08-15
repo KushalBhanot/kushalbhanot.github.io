@@ -14,6 +14,7 @@
   --primary-variant: #101EF7;
   --text: #000;
   --text-variant: #fff;
+  --highlight: #10F775;
 }
 
 /* overall adjustments */
@@ -147,11 +148,11 @@ nav {
 }
 
 #collaborate span {
-    color: #10F775;
+    color: var(--highlight);
 }
 
 .collab-div {
-    border-top: 20px solid #10F775;
+    border-top: 20px solid var(--highlight);
     border-radius: 5%;
     margin-top: -15%;
     padding-top: 15%;
@@ -202,7 +203,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #10F775;
+    background-color: var(--highlight);
     color: var(--text);
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2);
 }
@@ -213,4 +214,26 @@ nav {
         padding-right: 3%;
         padding-bottom: 10%;
     }
+}
+
+/* timeline section */
+#timeline {
+    height: auto;
+    background-color: rgba(16, 247, 117, 0.2);
+}
+#timeline h3 {
+    display: inline-block;
+    width: auto;
+    letter-spacing: 1.5px;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+#timeline ul {
+    padding-top: 12px;
+    padding-left: 40px;
+}
+
+#timeline span {
+    color: var(--primary);
 }
