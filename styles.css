@@ -88,6 +88,7 @@ nav {
         background-size: 90%;
         background-repeat: no-repeat;
         background-position: center;
+        height: 90vh;
     }
 
     #hero-image {
@@ -95,13 +96,13 @@ nav {
     }
 
     #hero-intro span {
-        font-size: 2.5em;
+        font-size: normal;
         color: var(--primary-variant);
     }
 
     #hero-intro p {
         padding-top: 50px;
-        font-size: 2em;
+        font-size: normal;
     }
 }
 
