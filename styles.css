@@ -155,6 +155,11 @@ nav {
 }
 
 @media only screen and (max-width: 1024px) {
+    #collaborate {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
     .collab-div {
         border: none;
     }
