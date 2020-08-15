@@ -73,13 +73,59 @@ nav {
 }
 
 #hero-intro span {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--primary-variant);
 }
 
 #hero-intro p {
     padding-top: 10%;
     font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 880px) {
+    #hero-section {
+        background-image: url('assets/images/imageedit_1_8252384436.png');
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #hero-image {
+        display: none;
+    }
+
+    #hero-intro span {
+        font-size: 2.5em;
+        color: var(--primary-variant);
+    }
+
+    #hero-intro p {
+        padding-top: 50px;
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1024px) {
+    #hero-section {
+        background-image: url('assets/images/imageedit_1_8252384436.png');
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #hero-image {
+        display: none;
+    }
+
+    #hero-intro span {
+        font-size: 2.5em;
+        color: var(--primary-variant);
+    }
+
+    #hero-intro p {
+        padding-top: 50px;
+        font-size: 2em;
+    }
 }
 
 /* collaborate section */
@@ -90,6 +136,7 @@ nav {
     padding-top: 5%;
     padding-left: 15%;
     padding-right: 15%;
+    z-index: 2;
 }
 
 #collaborate span {
@@ -103,11 +150,12 @@ nav {
     padding-top: 15%;
     padding-bottom: 15%;
     font-size: 1.2em;
+    z-index: 1;
 }
 
 /* hire section */
 #hire {
-    background-color: var(--text-variant);
+    background-color: var(--primary);
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;
@@ -115,8 +163,9 @@ nav {
 
 .hire-div {
     font-size: 1.5em;
-    border-bottom: 5px solid var(--text);
-    border-radius: 20%;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.8);
+    border-right: 8px solid rgba(0, 0, 0, 0.8);
+    border-radius: 1%;
     margin-top: -15%;
     background-color: var(--text-variant);
     padding-bottom: 5%;
