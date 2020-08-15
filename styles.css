@@ -54,11 +54,11 @@ nav {
     color: var(--primary-variant);
 }
 
-.navbar-toggler-icon {
-    background-color: var(--primary-variant);
+.navbar-toggler i {
+    color: var(--primary-variant);
 }
 
-.navbar-brand:hover, .nav-link:hover {
+.navbar-brand:hover, .nav-link:hover, .navbar-toggler i:hover {
     color: var(--text);
 }
 
