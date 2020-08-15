@@ -154,9 +154,9 @@ nav {
     z-index: 1;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 1024px) {
     .collab-div {
-        margin-top: -55px;
+        border: none;
     }
 }
 
