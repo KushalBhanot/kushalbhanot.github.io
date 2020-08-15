@@ -162,7 +162,7 @@ nav {
 
 @media only screen and (max-width: 1024px) {
     #collaborate {
-        padding: 10% 3% 10%;
+        padding: 10% 3% 5%;
     }
 
     .collab-div {
@@ -211,5 +211,6 @@ nav {
     #hire {
         padding-left: 3%;
         padding-right: 3%;
+        padding-bottom: 10%;
     }
 }
