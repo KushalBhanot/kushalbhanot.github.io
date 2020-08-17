@@ -1,0 +1,130 @@
+{
+    "dir": "ltr",
+    "lang": "English",
+    "name": "Kushal Bhanot",
+    "short_name": "Kushal Bhanot",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "https://kushalbhanot.github.io/",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "description": "Kushal Bhanot Chandigarh kushalbhanot.github.io Front-end Developer | UI/UX | ML Enthusiast | Community Builder ",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "https://kushalbhanot.github.io/assets/images/circle-cropped%20copy.png",
+            "type": "image/png",
+            "sizes": "438x438"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "https://kushalbhanot.github.io//windows10/SplashScreen.scale-200.png.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "https://kushalbhanot.github.io//ios/ios-appicon-1024-1024.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ],
+    "url": "https://kushalbhanot.github.io/",
+    "screenshots": [
+        {
+            "src": "[Embedded]",
+            "sizes": "1280x800",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "750x1334",
+            "type": "image/png"
+        }
+    ]
+}
