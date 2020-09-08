@@ -1,4 +1,5 @@
 # kushalbhanot.github.io
+[![HitCount](http://hits.dwyl.com/KushalBhanot/kushalbhanot.github.io.svg)](http://hits.dwyl.com/KushalBhanot/kushalbhanot.github.io)
 
 ### Features:
 - [x] Fill the background of get in touch with apt color
