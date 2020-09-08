@@ -1,4 +1,4 @@
-# kushalbhanot.dev
+# kushalbhanot.github.io
 
 ### Features:
 - [x] Fill the background of get in touch with apt color
