@@ -1,162 +1,482 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url("https://use.typekit.net/ojv4ekx.css");
 
-<head>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-T3LQZ9X');</script>
-    <!-- End Google Tag Manager -->
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "europa",sans-serif;
+  box-sizing: border-box;
+  outline:none;
+}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kushal Bhanot</title>
+/* Color Codes & Other Variables */
+:root {
+    --primary: #7510f7;
+  --primary-variant: #101EF7;
+  --text: #000;
+  --text-variant: #fff;
+  --highlight: #10F775;
+}
 
-    <!-- CSS stylesheets -->
-    <link rel="icon" type="image/png" href="/assets/images/circle-cropped copy.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/site.webmanifest">
-    <link rel='manifest' href='/manifest.json'>
-    <!-- aos css -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- custom stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+/* overall adjustments */
+html {
+    scroll-behavior: smooth;
+}
 
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/9b54928ef1.js" crossorigin="anonymous"></script>
+body {
+  overflow-x: hidden;
+}
 
-    <!-- Bootstrap scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-</head>
+.container-fluid {
+    padding: 3% 10%;
+}
 
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3LQZ9X" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
 
-    <a name="top"></a>
-    <nav class="navbar navbar-expand-lg selectDisable">
-        <a class="navbar-brand" href="index.html">
-            KB
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link px-4" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4" href="timeline.html">Timeline</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4" href="work.html">Work</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+} 
 
-    <section id="hero-section" data-aos="fade-in" data-aos-duration="1000">
-        <div class="container-fluid">
-            <div class="row">
-                <div id="hero-intro" class="col-lg-6">
-                    <span class="typer selectDisable" id="main"
-                        data-words="Front-end Web & iOS Developer | Community Builder" data-delay="100"
-                        data-deleteDelay="1000" data-loop="1" data-aos="fade-up"></span>
-                    <span class="cursor selectDisable" data-owner="main"></span>
-                    <p>A highly self-driven sophomore who loves to meet passionate developers across the globe
-                        and strongly believes
-                        in the power of community and sharing knowledge.</p>
-                    <!-- <button class="blog-btn">Blog</button>
-                    <button class="resume-btn">Resume</button> -->
-                    <!-- <div class="buttons"> -->
-                    <span class="row"><a
-                            href="mailto:developerkushalb@gmail.com?subject=I would like to collaborate&body=Hey! I just checked out your portfolio website and its awesome!"><button
-                                class="blob-btn">
-                                Mail Me
-                                <span class="blob-btn__inner">
-                                    <span class="blob-btn__blobs">
-                                        <span class="blob-btn__blob"></span>
-                                        <span class="blob-btn__blob"></span>
-                                        <span class="blob-btn__blob"></span>
-                                        <span class="blob-btn__blob"></span>
-                                    </span>
-                                </span>
-                            </button></a>
-                        <!-- <br /> -->
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
 
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                            <defs>
-                                <filter id="goo">
-                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                    <feColorMatrix in="blur" mode="matrix"
-                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo">
-                                    </feColorMatrix>
-                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                                </filter>
-                            </defs>
-                        </svg></span>
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
 
-                </div>
+/* Navigation Bar */
+nav {
+   background: var(--text-variant);
+   color: var(--primary-variant);
+   z-index: 1;
+}
 
-                <div id="hero-image" class="col-sm-6 selectDisable">
-                    <img src="assets/images/undraw_Hello_qnas.svg" alt="hero-image" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
+.navbar {
+    /* padding: 0 0 4.5rem;  */
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
-    <section id="collaborate">
-        <div class="container-fluid">
-            <div class="collab-div selectDisable">
-                <p>I'm currently learning iOS Dev and am
-                    open to collaborating
-                    on
-                    all sorts of
-                    projects (be it
-                    for
-                    open-source, hackathons or <span>just-for-fun</span>).</p>
-            </div>
-        </div>
-    </section>
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--primary-variant);
+}
 
-    <section id="hire">
-        <div class="container-fluid">
-            <div class="hire-div">
-                <p>Interested in working together? Let's do it.</p>
-                <a target="_blank" href="https://www.linkedin.com/in/kushalbhanot/">
-                    <button class="btn btn-lg btn-dark get-in-touch">Get in touch</button>
-                </a>
-            </div>
-        </div>
-    </section>
+.nav-item:hover {
+    border-bottom: 2px solid var(--highlight);
+}
 
-    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+.nav-link {
+    font-size: 1.5 rem;
+    font-weight: normal;
+    color: var(--primary-variant);
+}
 
-</html>
+.navbar-toggler i {
+    color: var(--primary-variant);
+}
+
+.navbar-brand:hover, .nav-link:hover, .navbar-toggler i:hover {
+    color: var(--text);
+}
+
+/* hero section */
+#hero-section {
+    height: 90vh;
+    padding-top: 2%;
+}
+
+#hero-intro {
+    color: var(--text);
+}
+
+#hero-intro span {
+    font-size: 2rem;
+    color: var(--primary-variant);
+}
+
+#hero-intro p {
+    padding-top: 10%;
+    font-size: 1.5rem;
+}
+#hero-intro p::selection {
+     background: #00FF84;
+}
+
+@media only screen and (max-width: 880px) {
+    #hero-section {
+        background-image: url('assets/images/imageedit_1_8252384436.png');
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90vh;
+    }
+
+    #hero-image {
+        display: none;
+    }
+
+    #hero-intro span {
+        font-size: normal;
+        color: var(--primary-variant);
+    }
+
+    #hero-intro p {
+        padding-top: 50px;
+        font-size: normal;
+    }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1165px) {
+    #hero-section {
+        padding-top: 5vh; 
+    };
+}
+
+@media only screen and (min-width: 880px) and (max-width: 990px) {
+    #hero-section {
+        background-image: url('assets/images/imageedit_1_8252384436.png');
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #hero-image {
+        display: none;
+    }
+
+    #hero-intro span {
+        font-size: 2em;
+        color: var(--primary-variant);
+    }
+
+    #hero-intro p {
+        padding-top: 50px;
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #hero-section {
+        padding-top: 5%;
+    }
+}
+
+/* blob button starts here */
+#hero-section button {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.blob-btn {
+  z-index: 1;
+  position: relative;
+  padding: 0.8em 2.4em;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.blob-btn:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+}
+.blob-btn:after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  border-radius: 30px;
+}
+.blob-btn:hover{
+  color: #FFFFFF;
+  border-radius: 30px;
+}
+.blob-btn:hover:after {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+.blob-btn__inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.blob-btn__blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  -webkit-filter: url("#goo");
+          filter: url("#goo");
+}
+.blob-btn__blob {
+  position: absolute;
+  top: 2px;
+  width: 25%;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 100%;
+  -webkit-transform: translate3d(0, 150%, 0) scale(1.7);
+          transform: translate3d(0, 150%, 0) scale(1.7);
+  -webkit-transition: -webkit-transform 0.45s;
+  transition: -webkit-transform 0.45s;
+  transition: transform 0.45s;
+  transition: transform 0.45s, -webkit-transform 0.45s;
+}
+@supports ((-webkit-filter: url("#goo")) or (filter: url("#goo"))) {
+  .blob-btn__blob {
+    -webkit-transform: translate3d(0, 150%, 0) scale(1.4);
+            transform: translate3d(0, 150%, 0) scale(1.4);
+  }
+}
+.blob-btn__blob:nth-child(1) {
+  left: 0%;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.blob-btn__blob:nth-child(2) {
+  left: 30%;
+  -webkit-transition-delay: 0.08s;
+          transition-delay: 0.08s;
+}
+.blob-btn__blob:nth-child(3) {
+  left: 60%;
+  -webkit-transition-delay: 0.16s;
+          transition-delay: 0.16s;
+}
+.blob-btn__blob:nth-child(4) {
+  left: 90%;
+  -webkit-transition-delay: 0.24s;
+          transition-delay: 0.24s;
+}
+.blob-btn:hover .blob-btn__blob {
+  -webkit-transform: translateZ(0) scale(1.7);
+          transform: translateZ(0) scale(1.7);
+}
+@supports ((-webkit-filter: url("#goo")) or (filter: url("#goo"))) {
+  .blob-btn:hover .blob-btn__blob {
+    -webkit-transform: translateZ(0) scale(1.4);
+            transform: translateZ(0) scale(1.4);
+  }
+}
+/* blob button ends here */
+
+/* collaborate section */
+#collaborate {
+    background-color: var(--primary);
+    color: var(--text-variant);
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    z-index: 2;
+}
+
+#collaborate span {
+    color: var(--highlight);
+}
+
+.collab-div {
+    border-top: 20px solid var(--highlight);
+    border-radius: 5%;
+    margin-top: -15%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-size: 1.2em;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1165px) {
+    #collaborate {
+        padding: 10% 3% 5%;
+    }
+
+    .collab-div {
+        border: none;
+    }
+}
+
+/* hire section */
+#hire {
+    background-color: var(--primary);
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 6%;
+}
+
+.hire-div {
+    font-size: 1.5em;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1%;
+    margin-top: -15%;
+    background-color: var(--text-variant);
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+.hire-div p::selection {
+    background: #00FF84;
+}
+
+.get-in-touch {
+    background-color:var(--text-variant);
+    border: 2px solid var(--primary-variant);
+    color: var(--text);
+}
+
+.get-in-touch:active, .get-in-touch:focus {
+    background-color:var(--text-variant) !important;
+    border: 2px solid var(--primary-variant);
+    color: var(--text) !important;
+}
+
+.get-in-touch:hover {
+    background-color: var(--highlight);
+    color: var(--text);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2);
+    -webkit-animation: tada 2s linear infinite;
+    animation: tada 2s linear infinite;
+}
+
+@-webkit-keyframes tada {0%{-webkit-transform:scale(1);transform:scale(1)}10%,20%{-webkit-transform:scale(.9) rotate(-8deg);transform:scale(.9) rotate(-8deg)}30%,50%,70%{-webkit-transform:scale(1.3) rotate(8deg);transform:scale(1.3) rotate(8deg)}40%,60%{-webkit-transform:scale(1.3) rotate(-8deg);transform:scale(1.3) rotate(-8deg)}100%,80%{-webkit-transform:scale(1) rotate(0);transform:scale(1) rotate(0)}}@keyframes tada{0%{-webkit-transform:scale(1);transform:scale(1)}10%,20%{-webkit-transform:scale(.9) rotate(-8deg);transform:scale(.9) rotate(-8deg)}30%,50%,70%{-webkit-transform:scale(1.3) rotate(8deg);transform:scale(1.3) rotate(8deg)}40%,60%{-webkit-transform:scale(1.3) rotate(-8deg);transform:scale(1.3) rotate(-8deg)}100%,80%{-webkit-transform:scale(1) rotate(0);transform:scale(1) rotate(0)}}
+
+@media only screen and (max-width: 1024px) {
+    #hire {
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 10%;
+    }
+}
+
+/* timeline section */
+#timeline {
+    height: auto;
+    background-color: rgba(16, 247, 117, 0.2);
+}
+#timeline h3 {
+    display: inline-block;
+    width: auto;
+    letter-spacing: 1.5px;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+#timeline ul {
+    padding-top: 12px;
+    padding-left: 40px;
+}
+
+#timeline li {
+    padding-top: 2px;
+    line-height: 1.75rem;
+}
+
+#timeline span {
+    color: var(--primary);
+}
+
+/*  under development */
+#under-dev {
+    text-align: center;
+    padding-top: 200px;
+    -webkit-animation: flash 2s ease;
+    animation: flash 2s ease;
+}
+
+@-webkit-keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}@keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}.faa-flash.animated,.faa-flash.animated-hover:hover,.faa-parent.animated-hover:hover>.faa-flash{-webkit-animation:flash 2s ease infinite;animation:flash 2s ease infinite}.faa-flash.animated-hover.faa-fast:hover,.faa-flash.animated.faa-fast,.faa-parent.animated-hover:hover>.faa-flash.faa-fast{-webkit-animation:flash 1s ease infinite;animation:flash 1s ease infinite}.faa-flash.animated-hover.faa-slow:hover,.faa-flash.animated.faa-slow,.faa-parent.animated-hover:hover>.faa-flash.faa-slow{-webkit-animation:flash 3s ease infinite;animation:flash 3s ease infinite}
+
+/* work section */
+/* .project-showcase {
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+} */
+
+.card {
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {
+    .web-card img {
+        width: 100%;
+    }
+}
+
+.project-showcase p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.project-showcase a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.project-showcase a:hover {
+    color: var(--primary-variant);
+}
+
+/* footer */
+#footer {
+  background-color: var(--text);
+  color: #CCFF00;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+#footer a {
+  color: #CCFF00;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: var(--highlight);
+}
+
+#footer p {
+  padding-top: 1.6rem;
+}
