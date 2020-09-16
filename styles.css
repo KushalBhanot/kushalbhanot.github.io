@@ -110,8 +110,7 @@ nav {
     font-size: 1.5rem;
 }
 #hero-intro p::selection {
-     color: #fff;
-     background: #000;
+     background: #00FF84;
 }
 
 @media only screen and (max-width: 880px) {
@@ -138,7 +137,13 @@ nav {
     }
 }
 
-@media only screen and (min-width: 880px) and (max-width: 1024px) {
+@media only screen and (min-width: 880px) and (max-width: 1165px) {
+    #hero-section {
+        padding-top: 5%; 
+    };
+}
+
+@media only screen and (min-width: 880px) and (max-width: 990px) {
     #hero-section {
         background-image: url('assets/images/imageedit_1_8252384436.png');
         background-size: 80%;
@@ -151,13 +156,13 @@ nav {
     }
 
     #hero-intro span {
-        font-size: 2.5em;
+        font-size: 2em;
         color: var(--primary-variant);
     }
 
     #hero-intro p {
         padding-top: 50px;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
 
@@ -166,6 +171,133 @@ nav {
         padding-top: 5%;
     }
 }
+
+/* blob button starts here */
+#hero-section button {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.blob-btn {
+  z-index: 1;
+  position: relative;
+  padding: 0.8em 2.4em;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.blob-btn:before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primary);
+  border-radius: 30px;
+}
+.blob-btn:after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  border-radius: 30px;
+}
+.blob-btn:hover{
+  color: #FFFFFF;
+  border-radius: 30px;
+}
+.blob-btn:hover:after {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+.blob-btn__inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.blob-btn__blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  -webkit-filter: url("#goo");
+          filter: url("#goo");
+}
+.blob-btn__blob {
+  position: absolute;
+  top: 2px;
+  width: 25%;
+  height: 100%;
+  background: var(--primary);
+  border-radius: 100%;
+  -webkit-transform: translate3d(0, 150%, 0) scale(1.7);
+          transform: translate3d(0, 150%, 0) scale(1.7);
+  -webkit-transition: -webkit-transform 0.45s;
+  transition: -webkit-transform 0.45s;
+  transition: transform 0.45s;
+  transition: transform 0.45s, -webkit-transform 0.45s;
+}
+@supports ((-webkit-filter: url("#goo")) or (filter: url("#goo"))) {
+  .blob-btn__blob {
+    -webkit-transform: translate3d(0, 150%, 0) scale(1.4);
+            transform: translate3d(0, 150%, 0) scale(1.4);
+  }
+}
+.blob-btn__blob:nth-child(1) {
+  left: 0%;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.blob-btn__blob:nth-child(2) {
+  left: 30%;
+  -webkit-transition-delay: 0.08s;
+          transition-delay: 0.08s;
+}
+.blob-btn__blob:nth-child(3) {
+  left: 60%;
+  -webkit-transition-delay: 0.16s;
+          transition-delay: 0.16s;
+}
+.blob-btn__blob:nth-child(4) {
+  left: 90%;
+  -webkit-transition-delay: 0.24s;
+          transition-delay: 0.24s;
+}
+.blob-btn:hover .blob-btn__blob {
+  -webkit-transform: translateZ(0) scale(1.7);
+          transform: translateZ(0) scale(1.7);
+}
+@supports ((-webkit-filter: url("#goo")) or (filter: url("#goo"))) {
+  .blob-btn:hover .blob-btn__blob {
+    -webkit-transform: translateZ(0) scale(1.4);
+            transform: translateZ(0) scale(1.4);
+  }
+}
+/* blob button ends here */
 
 /* collaborate section */
 #collaborate {
@@ -192,7 +324,7 @@ nav {
     z-index: 1;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1165px) {
     #collaborate {
         padding: 10% 3% 5%;
     }
@@ -221,23 +353,22 @@ nav {
     padding-top: 2%;
 }
 .hire-div p::selection {
-     color: #fff;
-     background: #000;
+    background: #00FF84;
 }
 
-.btn {
+.get-in-touch {
     background-color:var(--text-variant);
     border: 2px solid var(--primary-variant);
     color: var(--text);
 }
 
-.btn:active, .btn:focus {
+.get-in-touch:active, .get-in-touch:focus {
     background-color:var(--text-variant) !important;
     border: 2px solid var(--primary-variant);
     color: var(--text) !important;
 }
 
-.btn:hover {
+.get-in-touch:hover {
     background-color: var(--highlight);
     color: var(--text);
     box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2);
@@ -291,3 +422,61 @@ nav {
 }
 
 @-webkit-keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}@keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}.faa-flash.animated,.faa-flash.animated-hover:hover,.faa-parent.animated-hover:hover>.faa-flash{-webkit-animation:flash 2s ease infinite;animation:flash 2s ease infinite}.faa-flash.animated-hover.faa-fast:hover,.faa-flash.animated.faa-fast,.faa-parent.animated-hover:hover>.faa-flash.faa-fast{-webkit-animation:flash 1s ease infinite;animation:flash 1s ease infinite}.faa-flash.animated-hover.faa-slow:hover,.faa-flash.animated.faa-slow,.faa-parent.animated-hover:hover>.faa-flash.faa-slow{-webkit-animation:flash 3s ease infinite;animation:flash 3s ease infinite}
+
+/* work section */
+/* .project-showcase {
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+} */
+
+.card {
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {
+    .web-card img {
+        width: 100%;
+    }
+}
+
+.project-showcase p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.project-showcase a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.project-showcase a:hover {
+    color: var(--primary-variant);
+}
+
+/* footer */
+#footer {
+  background-color: var(--text);
+  color: #CCFF00;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+#footer a {
+  color: #CCFF00;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: var(--highlight);
+}
+
+#footer p {
+  padding-top: 1.6rem;
+}
