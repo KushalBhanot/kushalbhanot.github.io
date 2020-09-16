@@ -480,3 +480,10 @@ nav {
 #footer p {
   padding-top: 1.6rem;
 }
+
+@media only screen and (max-width: 768px) {
+    footer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
