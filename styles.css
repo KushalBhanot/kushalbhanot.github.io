@@ -127,13 +127,13 @@ nav {
     }
 
     #hero-intro span {
-        font-size: normal;
+        font-size: 1.5rem;
         color: var(--primary-variant);
     }
 
     #hero-intro p {
         padding-top: 50px;
-        font-size: normal;
+        font-size: 1rem;
     }
 }
 
