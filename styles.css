@@ -115,6 +115,7 @@ nav {
 
 @media only screen and (max-width: 880px) {
     #hero-section {
+        padding-top: 0;
         background-image: url('assets/images/imageedit_1_8252384436.png');
         background-size: 90%;
         background-repeat: no-repeat;
