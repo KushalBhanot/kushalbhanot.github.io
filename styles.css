@@ -106,7 +106,7 @@ nav {
 }
 
 #hero-intro p {
-    padding-top: 10%;
+    padding-top: 5%;
     font-size: 1.5rem;
 }
 #hero-intro p::selection {
@@ -424,37 +424,43 @@ nav {
 @-webkit-keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}@keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}.faa-flash.animated,.faa-flash.animated-hover:hover,.faa-parent.animated-hover:hover>.faa-flash{-webkit-animation:flash 2s ease infinite;animation:flash 2s ease infinite}.faa-flash.animated-hover.faa-fast:hover,.faa-flash.animated.faa-fast,.faa-parent.animated-hover:hover>.faa-flash.faa-fast{-webkit-animation:flash 1s ease infinite;animation:flash 1s ease infinite}.faa-flash.animated-hover.faa-slow:hover,.faa-flash.animated.faa-slow,.faa-parent.animated-hover:hover>.faa-flash.faa-slow{-webkit-animation:flash 3s ease infinite;animation:flash 3s ease infinite}
 
 /* work section */
-/* .project-showcase {
-    text-decoration: none;
-    text-align: center;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-} */
-
+#work-section {
+    padding: 0 5%;
+}
+@media only screen and (max-width: 768px) {
+    #work-section {
+        padding: 0;
+    }
+}
+#work-section img {
+    height: 40vh;
+}
+@media only screen and (max-width: 600px) {
+    #work-section img {
+        height: 250px;
+    }
+}
 .card {
     border-radius: 8px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     text-align: center;
 }
-
 @media only screen and (max-width: 1440px) {
     .web-card img {
         width: 100%;
     }
 }
-
 .project-showcase p {
     font-weight: bold;
     font-size: 1.1rem;
     letter-spacing: 1px;
     padding-top: 20px;
 }
-
 .project-showcase a {
     color: var(--text);
     text-decoration: none;
 }
-
 .project-showcase a:hover {
     color: var(--primary-variant);
 }
