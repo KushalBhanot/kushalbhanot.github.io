@@ -113,6 +113,10 @@ nav {
      background: #00FF84;
 }
 
+#typerbox{
+  height:50px;
+}
+
 @media only screen and (max-width: 880px) {
     #hero-section {
         padding-top: 0;
