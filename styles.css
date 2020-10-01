@@ -67,8 +67,8 @@ nav {
   }
 
 .navbar-brand {
-    font-size: 2rem;
-    font-weight: bolder;
+    height: 50px;
+    width: 43px;
     color: var(--primary-variant);
 }
 
