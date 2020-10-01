@@ -44,6 +44,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <!-- service worker -->
+    <script src="/ServiceWorker.js"></script>
 </head>
 
 <body>
@@ -155,6 +157,22 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        // service worker registering onload
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator.serviceWorker.register('/sw.js');
+                } catch (e) {
+                    console.log('SW Registration Failed');
+                }   
+            }
+        }
     </script>
 </body>
 
