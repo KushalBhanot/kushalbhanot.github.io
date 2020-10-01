@@ -1,273 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Google Tag Manager -->
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    "gtm.start": new Date().getTime(),
-                    event: "gtm.js",
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != "dataLayer" ? "&l=" + l : "";
-                j.async = true;
-                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "GTM-T3LQZ9X");
-        </script>
-        <!-- End Google Tag Manager -->
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kushal Bhanot</title>
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-T3LQZ9X');</script>
+    <!-- End Google Tag Manager -->
 
-        <!-- CSS stylesheets -->
-        <link
-            rel="icon"
-            type="image/png"
-            href="assets/images/circle-cropped copy.png"
-        />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-            crossorigin="anonymous"
-        />
-        <!-- aos css -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <!-- custom stylesheet -->
-        <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushal Bhanot</title>
 
-        <!-- Font awesome -->
-        <script
-            src="https://kit.fontawesome.com/9b54928ef1.js"
-            crossorigin="anonymous"
-        ></script>
+    <!-- CSS stylesheets -->
+    <link rel="icon" type="image/png" href="assets/images/circle-cropped copy.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- aos css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 
-        <!-- Bootstrap scripts -->
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"
-        ></script>
-    </head>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/9b54928ef1.js" crossorigin="anonymous"></script>
 
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-            ><iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-T3LQZ9X"
-                height="0"
-                width="0"
-                style="display: none; visibility: hidden"
-            ></iframe
-        ></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
 
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html"> KB </a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="timeline.html"
-                            >Timeline</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="work.html">Work</a>
-                    </li>
-                </ul>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3LQZ9X" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            KB
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="timeline.html">Timeline</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="work.html">Work</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="work-section" class="selectDisable">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body web-card">
+                            <!-- <img height="300px" width="500px" src="assets/images/projects/Techify.png" alt="Techify"> -->
+                            <img src="assets/images/projects/Techify Mockup.png" alt="Techify">
+                            <div class="content-box">
+                                <p><a href="https://github.com/KushalBhanot/Techify" target="_blank">Techify</a></p>
+                                <h1>Web</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body mobile-card">
+                            <img src="assets/images/projects/Quizzler.gif" alt="Quizzler">
+                            <div class="content-box">
+                                <p><a href="https://github.com/KushalBhanot/Quizzler-iOS13" target="_blank">Quizzler</a></p>
+                                <h1>iOS</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
 
-        <section id="work-section" class="selectDisable">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 project-showcase">
-                        <div
-                            class="card mt-4 mb-4"
-                            data-aos="fade-up"
-                            data-aos-duration="800"
-                        >
-                            <div class="card-body web-card">
-                                <!-- <img height="300px" width="500px" src="assets/images/projects/Techify.png" alt="Techify"> -->
-                                <img
-                                    src="assets/images/projects/Techify Mockup.png"
-                                    alt="Techify"
-                                />
-                                <div class="content-box">
-                                    <p></p>
-                                        <a
-                                            href="https://github.com/KushalBhanot/Techify"
-                                            target="_blank"
-                                            >Techify</a
-                                        >
-                                    </p>
-                                    <h1>Web</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 project-showcase">
-                        <div
-                            class="card mt-4 mb-4"
-                            data-aos="fade-up"
-                            data-aos-duration="800"
-                        >
-                            <div class="card-body mobile-card">
-                                <img
-                                    src="assets/images/projects/Quizzler.gif"
-                                    alt="Quizzler"
-                                />
-                                <div class="content-box">
-                                    <p>
-                                        <a
-                                            href="https://github.com/KushalBhanot/Quizzler-iOS13"
-                                            target="_blank"
-                                            >Quizzler</a
-                                        >
-                                    </p>
-                                    <h1>iOS</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 project-showcase">
-                        <div
-                            class="card mt-4 mb-4"
-                            data-aos="fade-up"
-                            data-aos-duration="800"
-                        >
-                            <div class="card-body web-card">
-                                <!-- <img height="300px" width="500px" src="assets/images/projects/Personal Portfolio.png"
+            <div class="row">
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body web-card">
+                            <!-- <img height="300px" width="500px" src="assets/images/projects/Personal Portfolio.png"
                                 alt="Personal Portfolio"> -->
-                                <img
-                                    src="assets/images/projects/Personal Portfolio Mockup.png"
-                                    alt="Personal Portfolio"
-                                />
-                                <div class="content-box">
-                                    <p>
-                                        <a
-                                            href="https://github.com/KushalBhanot/kushalbhanot.github.io"
-                                            target="_blank"
-                                            >Personal Portfolio</a
-                                        >
-                                    </p>
-                                    <h1>Web</h1>
-                                </div>
+                            <img src="assets/images/projects/Personal Portfolio Mockup.png" alt="Personal Portfolio">
+                            <div class="content-box">
+                                <p><a href="https://github.com/KushalBhanot/kushalbhanot.github.io" target="_blank">Personal Portfolio</a></p>
+                                <h1>Web</h1>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body mobile-card">
+                            <img src="assets/images/projects/EggTimer.gif" alt="EggTimer">
+                            <div class="content-box">
+                                <p><a href="https://github.com/KushalBhanot/EggTimer-iOS13" target="_blank">EggTimer</a></p>
+                                <h1>iOS</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 project-showcase">
-                        <div
-                            class="card mt-4 mb-4"
-                            data-aos="fade-up"
-                            data-aos-duration="800"
-                        >
-                            <div class="card-body mobile-card">
-                                <img
-                                    src="assets/images/projects/EggTimer.gif"
-                                    alt="EggTimer"
-                                />
-                                <div class="content-box">
-                                    <p>
-                                        <a
-                                            href="https://github.com/KushalBhanot/EggTimer-iOS13"
-                                            target="_blank"
-                                            >EggTimer</a
-                                        >
-                                    </p>
-                                    <h1>iOS</h1>
-                                </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body web-card">
+                            <!-- <img height="300px" width="500px" src="assets/images/projects/Explorer.png" alt="Explorer"> -->
+                            <img src="assets/images/projects/Explorer Mockup.png" alt="Explorer">
+                            <div class="content-box">
+                                <p><a href="https://github.com/KushalBhanot/Explorer" target="_blank">Explorer</a></p>
+                                <h1>Web</h1>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 project-showcase">
-                        <div
-                            class="card mt-4 mb-4"
-                            data-aos="fade-up"
-                            data-aos-duration="800"
-                        >
-                            <div class="card-body web-card">
-                                <!-- <img height="300px" width="500px" src="assets/images/projects/Explorer.png" alt="Explorer"> -->
-                                <img
-                                    src="assets/images/projects/Explorer Mockup.png"
-                                    alt="Explorer"
-                                />
-                                <div class="content-box">
-                                    <p>
-                                        <a
-                                            href="https://github.com/KushalBhanot/Explorer"
-                                            target="_blank"
-                                            >Explorer</a
-                                        >
-                                    </p>
-                                    <h1>Web</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-12 project-showcase">
-                        <div
-                            class="card mt-4 mb-4"
-                            data-aos="fade-up"
-                            data-aos-duration="800"
-                        >
-                            <div class="card-body mobile-card">
-                                <img
-                                    src="assets/images/projects/Xylophone.gif"
-                                    alt="Xylophone"
-                                />
-                                <div class="content-box">
-                                    <p>
-                                        <a
-                                            href="https://github.com/KushalBhanot/Xylophone-iOS13"
-                                            target="_blank"
-                                            >Xylophone</a
-                                        >
-                                    </p>
-                                    <h1>iOS</h1>
-                                </div>
-                            </div>
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body mobile-card">
+                            <img src="assets/images/projects/Xylophone.gif" alt="Xylophone">
+                            <div class="content-box">
+                                <p><a href="https://github.com/KushalBhanot/Xylophone-iOS13" target="_blank">Xylophone</a></p>
+                                <h1>iOS</h1>
+                            </div>                            
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-6 col-md-12 project-showcase">
                     <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
                         <div class="card-body">
@@ -291,34 +181,33 @@
                     </div>
                 </div>
             </div> -->
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="footer" class="selectDisable">
-            <a target="_blank" href="https://github.com/KushalBhanot"
-                ><i class="fab fa-github fa-3x" aria-hidden="true"></i
-            ></a>
-            <a
-                href="https://github.com/KushalBhanot/kushalbhanot.github.io/blob/master/LICENSE"
-            >
-                <p>GNU Affero General Public License v3.0</p>
-            </a>
-        </section>
+    <section id="footer" class="selectDisable">
+        <a target="_blank" href="https://github.com/KushalBhanot"><i class="fab fa-github fa-3x"
+                aria-hidden="true"></i></a>
+        <a href="https://github.com/KushalBhanot/kushalbhanot.github.io/blob/master/LICENSE">
+            <p>GNU Affero General
+                Public License v3.0</p>
+        </a>
+    </section>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-        <script type="text/javascript" src="./vanilla-tilt.min.js"></script>
-        <script type="text/javascript">
-            let w = window.innerWidth;
-                // console.log(w);
-                if(w >= 812){
-                    VanillaTilt.init(document.querySelectorAll(".card-body"), {
-                        max: 25,
-                        speed: 400
-                    });
-                }
-        </script>
-    </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="./vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        let w = window.innerWidth;
+            // console.log(w);
+            if(w >= 812){
+                VanillaTilt.init(document.querySelectorAll(".card-body"), {
+                    max: 25,
+                    speed: 400
+                });
+            }
+    </script>
+</body>
+
 </html>
