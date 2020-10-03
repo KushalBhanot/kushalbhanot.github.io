@@ -44,9 +44,9 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg selectDisable fixed-top" id="navbar">
         <a class="navbar-brand" href="index.html">
-            KB
+            <img src="assets/images/kb.png" alt="KB" width="60px">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,9 +64,6 @@
                 <li class="nav-item">
                     <a class="nav-link px-4" href="work.html">Work</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4" href="blog.html">Blog</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -76,6 +73,34 @@
             This is still in development. Kindly, come back later in a few days!
         </div>
     </section>
+    <script>
+        // Navbar on scroll color change event
+        window.onscroll = function() {colorChange()};
+    
+        function colorChange() {
+            var navbar = document.getElementById("navbar");
+            var links = document.getElementsByClassName("nav-link");
+            console.log(links);
+            for(i = 0; i< links.length;i++) {
+                links[i].style.color = "#fff";
+            }
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            navbar.className = "navbar navbar-expand-lg selectDisable fixed-top";
+            navbar.style.transition = "0.2s ease-in-out";
+            navbar.style.backgroundColor = "var(--navbar-variant)";
+            for(i = 0; i< links.length;i++) {
+                links[i].style.color = "#fff";
+            }
+        } else {
+            document.getElementById("navbar").className = "navbar navbar-expand-lg selectDisable fixed-top";
+            navbar.style.transition = "0.2s ease-in-out";
+            navbar.style.backgroundColor = "#fff";
+            for(i = 0; i< links.length;i++) {
+                links[i].style.color = "var(--primary-variant)";
+            }
+        }
+        }
+        </script>
 
 </body>
 
