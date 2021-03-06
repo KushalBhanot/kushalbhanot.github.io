@@ -1,4 +1,4 @@
-# kushalbhanot.github.io
+# kushiosdev.github.io
 
 ## Contributions to this repo are WELCOME ⚡️🙌🏻
 - :art: give suggestions on how to improve the UI design.
@@ -12,15 +12,15 @@
 
 ## Steps to be followed in order to make valid contributions ☘️
 
-**1.** Fork the [kushalbhanot.github.io](https://github.com/KushalBhanot/kushalbhanot.github.io) repo by clicking on the fork button on the top of the page. This will create a copy of this repository in your account.
+**1.** Fork the [kushiosdev.github.io](https://github.com/kushiodev/kushiosdev.github.io) repo by clicking on the fork button on the top of the page. This will create a copy of this repository in your account.
 
 **2.** Clone the forked repository
 
-	git clone "https://github.com/<your-github-username>/kushalbhanot.github.io
+	git clone "https://github.com/<your-github-username>/kushiosdev.github.io
 	
 **3.** Create a branch named **develop**
 
-	cd kushalbhanot.github.io
+	cd kushiosdev.github.io
 	git checkout -b develop
 	
 **4.** Make necessary changes and commit those changes
@@ -35,4 +35,4 @@
 **6.** Create a Pull Request 🤟🏻 
 	<br>If you go to your repository on GitHub, you’ll see a `Compare & pull request` button. Click on that button. I'll review your code and merge it if it passes all the tests ❤️
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/KushalBhanot)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/kushiodev)
